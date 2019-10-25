@@ -13,8 +13,8 @@
 
 <p><strong>Getting Started & Materials</strong></p>
 <ul>
-<li> <a href="environment">Environment setup: setting up your machine to hack USB -- and run the exercises</a></li>
-<li> <a href="flashing">Quick guide: flashing your target ('victim') boards</a></li>
+<li> <a href="pages/environment">Environment setup: setting up your machine to hack USB -- and run the exercises</a></li>
+<li> <a href="pages/flashing">Quick guide: flashing your target ('victim') boards</a></li>
 <li> <a href="challenges">Workshop Exercises and Mini-CTF Challenges</a></li>
 </ul>
 
