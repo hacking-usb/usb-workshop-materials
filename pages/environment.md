@@ -58,7 +58,7 @@ You're all set to move on to the next tutorial!
 3. Plug in your ATtiny board to a free USB port. 
 4. The device *should* show up in Zadig as "Unknown Device #1" or similar. Select that device.
 5. Use the arrows to select `libusb-win32`, and click "Install Driver".
-   <br/><img width="574" height="254" src="/files/9e4bf7c1a17b68d7ea296d7ea45bd85d/zadig_install_driver.png"/>
+   <br/><img width="574" height="254" src="zadig_install_driver.png"/>
 
 After you [program the board](flashing) you'll have to repeat steps 2-5 again.
 
