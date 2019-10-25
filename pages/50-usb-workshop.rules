@@ -1,0 +1,8 @@
+# Micronucleus
+ATTR{idVendor}=="16d0", ATTR{idProduct}=="0753", MODE="660", GROUP="plugdev", TAG+="uacces"
+
+# GreatFET
+ATTR{idVendor}=="1d50", ATTR{idProduct}=="60e6", MODE="660", GROUP="plugdev", TAG+="uacces"
+
+# GreatFET "target"
+ATTR{idVendor}=="1d50", ATTR{idProduct}=="60e7", MODE="660", GROUP="plugdev", TAG+="uacces"
