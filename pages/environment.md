@@ -41,7 +41,7 @@ You're all set to move on to the next tutorial!
 	<img src="download_python.png" width="509" height="280"/>
 3. Run the installer
 4. Click "Add Python 3.7 to PATH", then "Install Now".
-   <br/><img width="498" height="306.984" src="/files/abd762d347f27ad7b9476ac457d3a443/install_python.png"/>
+   <br/><img width="498" height="306.984" src="install_python.png"/>
 
 #### Installing PyUSB
 
