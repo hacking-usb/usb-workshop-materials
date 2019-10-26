@@ -45,11 +45,11 @@ def control_transfer(device, direction, type, destination, request, index, value
         device -- The pyusb device to work with.
         direction -- Sets the direction of the transaction-- either DEVICE_TO_HOST or HOST_TO_DEVICE.
         type -- Sets the type of request; usually one of the _REQUEST constants above.
-        destination -- Sets the 'destination' of the request; this would probably better be 
+        destination -- Sets the 'destination' of the request; this would probably better be
                 thought of as the 'context' of the request. Almost always RECIPIENT_DEVICE.
 
         request - The request number. Valid values include the specification-provided request numbers for standard
-                requests, or any number < 256 for a vendor request 
+                requests, or any number < 256 for a vendor request
         index -- index argument; < 65536
         value -- value argument; < 65536
 
@@ -64,7 +64,7 @@ def control_transfer(device, direction, type, destination, request, index, value
         # If we got a raw result, return it.
         if not isinstance(result, array.array):
             return result
-       
+
         # Convert the result into a nice, printable format for the exercise.
         # We'll use whichever method is provided by the python install (py2 vs py3 difference)
         if hasattr(result, 'tobytes'):
@@ -73,7 +73,7 @@ def control_transfer(device, direction, type, destination, request, index, value
             return repr(result.tostring())
 
     except usb.core.USBError as e:
-        if e.errno == 32:
+        if e.errno == 32 or e.errno is None:
             return "STALLED"
         else:
             raise e
